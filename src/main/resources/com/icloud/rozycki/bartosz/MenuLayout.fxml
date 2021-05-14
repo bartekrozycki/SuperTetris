@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.icloud.rozycki.bartosz.scene.controll.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<Pane prefHeight="720" prefWidth="360" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.icloud.rozycki.bartosz.controllers.MenuController">
+    <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0"
+                prefWidth="360.0">
+        <center>
+            <Menu stylesheets="@MenuLayout.css" fx:id="MenuContainer"
+                  onKeyPressed="#KeyPressEvent"
+                  alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
+                  minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"
+                  BorderPane.alignment="CENTER">
+
+                <MenuItem styleClass="menuItem, selected" fx:id="startButton" text="Start Game">
+
+                </MenuItem>
+
+                <MenuItem styleClass="menuItem" fx:id="rankButton" text="Ranking">
+
+                </MenuItem>
+
+                <MenuItem styleClass="menuItem" fx:id="settingsButton" text="Settings">
+
+                </MenuItem>
+
+                <MenuItem styleClass="menuItem" fx:id="quitButton" text="Quit" onAction="#QuitAction">
+
+                </MenuItem>
+
+            </Menu>
+        </center>
+    </BorderPane>
+</Pane>

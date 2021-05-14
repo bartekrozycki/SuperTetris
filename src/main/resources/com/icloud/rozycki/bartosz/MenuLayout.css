@@ -1,0 +1,11 @@
+.menuItem {
+    -fx-border-width: 0;
+    -fx-background-color: rgba(0,0,0,0);
+    -fx-font-size: 18px;
+    -fx-text-fill: #007326;
+}
+
+.selected {
+    -fx-font-size: 24px;
+    -fx-text-fill: #00c43a;
+}
