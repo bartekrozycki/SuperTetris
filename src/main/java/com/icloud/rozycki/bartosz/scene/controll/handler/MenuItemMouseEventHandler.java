@@ -1,4 +1,4 @@
-package com.icloud.rozycki.bartosz.scene.controll.handlers;
+package com.icloud.rozycki.bartosz.scene.controll.handler;
 
 import com.icloud.rozycki.bartosz.scene.controll.Menu;
 import com.icloud.rozycki.bartosz.scene.controll.MenuItem;

@@ -1,6 +1,6 @@
 package com.icloud.rozycki.bartosz.scene.controll;
 
-import com.icloud.rozycki.bartosz.scene.controll.handlers.MenuItemMouseEventHandler;
+import com.icloud.rozycki.bartosz.scene.controll.handler.MenuItemMouseEventHandler;
 import javafx.scene.control.Button;
 
 import static javafx.scene.input.MouseEvent.MOUSE_ENTERED;
