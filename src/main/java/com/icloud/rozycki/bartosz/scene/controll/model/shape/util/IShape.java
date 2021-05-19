@@ -1,4 +1,4 @@
-package com.icloud.rozycki.bartosz.scene.controll.shape;
+package com.icloud.rozycki.bartosz.scene.controll.model.shape.util;
 
 public interface IShape {
     void draw(int x, int y);

@@ -2,9 +2,9 @@ package com.icloud.rozycki.bartosz.controller;
 
 import com.icloud.rozycki.bartosz.App;
 import com.icloud.rozycki.bartosz.GridSettings;
-import com.icloud.rozycki.bartosz.scene.controll.shape.IShape;
-import com.icloud.rozycki.bartosz.scene.controll.shape.ShapeFactory;
-import com.icloud.rozycki.bartosz.scene.controll.shape.ShapeType;
+import com.icloud.rozycki.bartosz.scene.controll.model.shape.util.IShape;
+import com.icloud.rozycki.bartosz.scene.controll.model.shape.util.ShapeFactory;
+import com.icloud.rozycki.bartosz.scene.controll.model.shape.util.ShapeType;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;

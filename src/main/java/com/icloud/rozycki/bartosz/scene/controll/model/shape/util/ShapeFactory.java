@@ -1,6 +1,6 @@
-package com.icloud.rozycki.bartosz.scene.controll.shape;
+package com.icloud.rozycki.bartosz.scene.controll.model.shape.util;
 
-import com.icloud.rozycki.bartosz.scene.controll.shape.model.LShape;
+import com.icloud.rozycki.bartosz.scene.controll.model.shape.LShape;
 
 public class ShapeFactory {
 

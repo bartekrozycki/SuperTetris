@@ -1,5 +1,7 @@
-package com.icloud.rozycki.bartosz.scene.controll.shape;
+package com.icloud.rozycki.bartosz.scene.controll.model.shape;
 
+import com.icloud.rozycki.bartosz.scene.controll.model.Block;
+import com.icloud.rozycki.bartosz.scene.controll.model.shape.util.IShape;
 import javafx.scene.Group;
 import javafx.scene.paint.Color;
 

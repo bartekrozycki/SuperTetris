@@ -1,4 +1,4 @@
-package com.icloud.rozycki.bartosz.scene.controll.shape;
+package com.icloud.rozycki.bartosz.scene.controll.model;
 
 import com.icloud.rozycki.bartosz.GridSettings;
 import javafx.scene.paint.Color;

@@ -1,7 +1,6 @@
-package com.icloud.rozycki.bartosz.scene.controll.shape.model;
+package com.icloud.rozycki.bartosz.scene.controll.model.shape;
 
-import com.icloud.rozycki.bartosz.scene.controll.shape.IShape;
-import com.icloud.rozycki.bartosz.scene.controll.shape.Shape;
+import com.icloud.rozycki.bartosz.scene.controll.model.shape.util.IShape;
 
 public class LShape extends Shape implements IShape {
     public LShape() {
