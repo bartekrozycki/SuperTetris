@@ -21,15 +21,23 @@ public abstract class Shape extends Group implements IShape {
     private int col;
     private int row;
 
-    public Shape() {
+    public Shape(Color color) {
         for (int i = 0; i < blocks.length; i++) {
-            blocks[i] = new Block(Color.ORANGE);
+            blocks[i] = new Block(color);
             this.getChildren().add(blocks[i]);
         }
         this.setVisible(false);
     }
 
+
     protected void setPosition(int[][][] position) {
+        assert position.length == 4;
+        for (int[][] ints : position) {
+            assert ints.length == 4;
+            for (int[] anInt : ints) {
+                assert anInt.length == 2;
+            }
+        }
         this.position = position;
     }
 

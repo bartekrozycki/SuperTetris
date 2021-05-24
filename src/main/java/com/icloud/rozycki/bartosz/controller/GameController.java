@@ -13,6 +13,8 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class GameController implements Initializable {
@@ -21,6 +23,8 @@ public class GameController implements Initializable {
     public Pane gamePane;
     IShape x;
 
+    List<IShape> shapeList = new ArrayList<>();
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         this.root.setPrefHeight(GridSettings.getHeight());
@@ -28,30 +32,49 @@ public class GameController implements Initializable {
 
         App.scene.setOnKeyPressed(this::keyPressedEvent);
 
-        x = ShapeFactory.getShape(ShapeType.ShapeTypeL);
-        ((Node) x).addEventFilter(KeyEvent.KEY_PRESSED, this::keyPressedEvent);
-        this.gamePane.getChildren().add((Node) x);
-        x.draw(0,0);
+
+        int temp = 0;
+        for (ShapeType type : ShapeType.values()) {
+            IShape object = ShapeFactory.getShape(type);
+//            ((Node) object).addEventFilter(KeyEvent.KEY_PRESSED, this::keyPressedEvent);
+            this.gamePane.getChildren().add((Node) object);
+            object.draw(2, temp);
+            temp += 4;
+            shapeList.add(object);
+        }
+
+//        x = ShapeFactory.getShape(ShapeType.ShapeTypeSquare);
+//        ((Node) x).addEventFilter(KeyEvent.KEY_PRESSED, this::keyPressedEvent);
+//        this.gamePane.getChildren().add((Node) x);
+//        x.draw(0,0);
     }
+
+
 
     @FXML
     public void keyPressedEvent(KeyEvent keyEvent) {
         System.out.println(keyEvent.getCode());
         switch (keyEvent.getCode()) {
             case W:
-                x.move(0, -1);
+                for (IShape iShape : shapeList)
+                    iShape.move(0, -1);
                 break;
             case S:
-                x.move(0, 1);
+                for (IShape iShape : shapeList)
+                    iShape.move(0, 1);
                 break;
             case A:
-                x.move(-1, 0);
+                for (IShape iShape : shapeList)
+                    iShape.move(-1, 0);
                 break;
             case D:
-                x.move(1,0);
+                for (IShape iShape : shapeList)
+                    iShape.move(1,0);
                 break;
             case X:
-                x.rotate();
+                for (IShape iShape : shapeList)
+                    iShape.rotate();
+                break;
         }
     }
 }
