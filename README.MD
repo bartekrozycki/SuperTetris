@@ -1,4 +1,4 @@
-#SuperTetris
+# SuperTetris
 ## Table of contents
 * [General info](#general-info)
 * [Shapes implemented](#Shapes-implemented)
