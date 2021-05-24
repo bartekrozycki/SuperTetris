@@ -13,12 +13,12 @@ Project is created with:
 * Maven 11
 * JavaFX 15.0.1
 
+## Shapes implemented
+![In game Shapes](img.png)
+
 ## Setup
 To run this project, install it locally using maven:
+
 ```
 maven javafx:run -f pom.xml
 ```
-
-
-## Shapes implemented
-![In game Shapes](img.png)
