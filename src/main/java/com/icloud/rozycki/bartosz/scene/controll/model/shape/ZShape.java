@@ -1,10 +1,9 @@
 package com.icloud.rozycki.bartosz.scene.controll.model.shape;
 
-import com.icloud.rozycki.bartosz.scene.controll.model.shape.util.IShape;
 import com.icloud.rozycki.bartosz.scene.controll.model.shape.util.Shape;
 import javafx.scene.paint.Color;
 
-public class ZShape extends Shape implements IShape {
+public class ZShape extends Shape {
     public ZShape() {
         super(Color.LAWNGREEN);
 
