@@ -1,9 +1,6 @@
 package com.icloud.rozycki.bartosz.scene.controll.model.shape.util;
 
-import com.icloud.rozycki.bartosz.scene.controll.model.shape.LShape;
-import com.icloud.rozycki.bartosz.scene.controll.model.shape.LineShape;
-import com.icloud.rozycki.bartosz.scene.controll.model.shape.SquareShape;
-import com.icloud.rozycki.bartosz.scene.controll.model.shape.ZShape;
+import com.icloud.rozycki.bartosz.scene.controll.model.shape.*;
 
 public class ShapeFactory {
 
@@ -19,6 +16,12 @@ public class ShapeFactory {
         }
         else if (type == ShapeType.ShapeTypeZ) {
             return new ZShape();
+        }
+        else if (type == ShapeType.ShapeTypeS) {
+            return new SShape();
+        }
+        else if (type == ShapeType.ShapeTypeT) {
+            return new TShape();
         }
         return new SquareShape();
     }

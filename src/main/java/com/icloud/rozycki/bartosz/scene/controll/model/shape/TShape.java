@@ -4,15 +4,15 @@ import com.icloud.rozycki.bartosz.scene.controll.model.shape.util.IShape;
 import com.icloud.rozycki.bartosz.scene.controll.model.shape.util.Shape;
 import javafx.scene.paint.Color;
 
-public class ZShape extends Shape implements IShape {
-    public ZShape() {
-        super(Color.LAWNGREEN);
+public class TShape extends Shape implements IShape {
+    public TShape() {
+        super(Color.PURPLE);
 
         int[][][] pos = {
-                {{-1, 0}, {0, 0}, {0, 1}, {1, 1}},
-                {{0, -1}, {0, 0}, {-1, 0}, {-1, 1}},
-                {{0, -1}, {0, 0}, {1, 0}, {-1, -1}},
-                {{0, 1}, {0, 0}, {1, 0}, {1, -1}},
+                {{-1, 1}, {0, 0}, {0, 1}, {1, 1}},
+                {{-1, -1}, {0, 0}, {-1, 0}, {-1, 1}},
+                {{-1, -1}, {0, 0}, {0, -1}, {1, -1}},
+                {{1, -1}, {0, 0}, {1, 0}, {1, 1}},
         };
         this.setPosition(pos);
     }

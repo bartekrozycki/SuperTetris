@@ -3,8 +3,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
+<?import javafx.scene.control.Label?>
 <AnchorPane fx:id="root" onKeyPressed="#keyPressedEvent" xmlns="http://javafx.com/javafx/11.0.1"
             xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.icloud.rozycki.bartosz.controller.GameController">
+
+    <Label fx:id="frameRateLabel"/>
 
     <Pane fx:id="gamePane"/>
 
